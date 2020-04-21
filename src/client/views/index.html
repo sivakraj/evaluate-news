@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__text">
+            Sentiment Analysis
+        </div>
+    </header>
+
+    <main>
+        <section class="form">
+            <h2 class="h2__title">Analyzer Form</h2>
+            <form name="sentiment" id="sentiment-form" method="POST" onsubmit="return Client.handleSubmit(event)">
+                <div id="wrapping" class="clearfix">
+                    <section id="aligned">
+                        <textarea name="text" id="text" placeholder="Enter a text to start..." tabindex="1"
+                            class="txtblock"></textarea>
+
+                        <select id="mode" name="mode" tabindex="2" class="selmenu">
+                            <option value="tweet">Tweet</option>
+                            <option value="document">Document</option>
+                        </select>
+
+                    </section>
+                </div>
+
+                <section class="buttons">
+                    <input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+                    <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="3"
+                        value="Submit for analysis!">
+                    <br style="clear:both;">
+                </section>
+            </form>
+            <section>
+
+                <section>
+                    <h2 class="h2__title">Sentiment Results:</h2>
+                    <div class="result">
+                        <div class="result__title">Entered Text</div>
+                        <div class="result__text">NA</div>
+                        <div class="result__table">
+                            <div class="result__title">Results</div>
+                            <table class="table table--list">
+                                <thead>
+                                    <tr>
+                                        <th>Polarity</th>
+                                        <th>Confidence</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="polarity__text">NA</td>
+                                        <td class="polarity__confidence">NA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>*NA could indicate either no text input to analyse or error in text analysis.</p>
+                    </div>
+                </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2020 sivakraj</p>
+    </footer>
+
+</body>
+
+</html>

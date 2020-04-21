@@ -1,0 +1,23 @@
+@mixin header-footer {
+    display: flex;
+    padding: 10px 40px;
+    background-color: #bea018;
+}
+
+.header {
+    @include header-footer;
+    justify-content: center;
+
+    &__text {
+        font-size: 2em;
+    }
+}
+
+footer {
+    @include header-footer;
+    justify-content: start;
+
+    p {
+        font-size: 1.2em;
+    }
+}
