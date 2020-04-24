@@ -4,8 +4,7 @@
  * @returns true if user enters atleast one character in the textarea field
  */
 function checkForValidValue(inputText) {
-    console.log('::: Running checkForValidValue :::', inputText);
-    return inputText.length > 0;
+    return inputText && inputText.length > 0;
 }
 
 export { checkForValidValue };

@@ -21,12 +21,15 @@ function handleSubmit(event) {
     //Post data to get text analyzed by Aylien API
     Client.postData('/analyseText', {text, mode})
     .then((response) => {
-        //update NA for empty response, expecting to return empty object on error for easy error handling
+        //update NA for empty response
         if(Object.entries(response).length === 0) {
             Client.updateUI(text, 'NA', 'NA');
         } else {
             Client.updateUI(response.text, response.polarity, response.polarity_confidence);
         }
+    })
+    .catch((error) => {
+        Client.updateUI(text, 'NA', 'NA');
     });
 }
 

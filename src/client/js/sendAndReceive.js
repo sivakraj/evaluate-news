@@ -17,10 +17,9 @@ const postData = async (url = '', data = {}) => {
         const newData = await response.json();
         return newData;
     } catch (error) {
-        console.error('Error in posting data: ', error);
-        return {};
+        throw error;
     }
 };
 
-export{ postData };
+export { postData };
 

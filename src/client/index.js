@@ -1,5 +1,5 @@
-import { checkForValidValue } from './js/checkForValidValue';
-import { postData } from './js/postData';
+import { checkForValidValue } from './js/validator';
+import { postData } from './js/sendAndReceive';
 import { updateUI } from './js/updateUI';
 import { handleSubmit } from './js/formHandler';
 
