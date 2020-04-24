@@ -14,18 +14,19 @@ Checkout this repo using GIT enabled terminal by cloning it as follows:
 ```
 
 #### Not Familiar with Git?
-Click [here](https://github.com/sivakraj/) then download the .zip file.  Extract the contents of the zip file.
+Click [here](https://github.com/sivakraj/) to download the .zip file.  Extract the contents of the zip file to your desired destination.
 
 #### Instructions to run on your local
 Running this project on your local requires Node installed in your system.
 
-Once Node is installed, navigate to the folder where this project is located in your system, and then install the following packages.
+Once Node is installed, navigate to the folder where this project is located in your system, and then install the required packages by running the following command:
 
-1. Express
-2. body-parser
-3. cors
+```
+> npm i
 
-Finally, after installing all the required modules, execute the following to get the application running.
+```
+
+Finally, after installing all the required modules, execute the following to get the application built and running.
 
 ##### To build files in dev mode
 ```
